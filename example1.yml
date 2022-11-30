@@ -12,6 +12,7 @@ teams:
     league: Barclays Premier league
     founded: 1905
     titles: [Champions League, Premier League, Club World Cup, Europa League, FA Cup, League Cup]  # List
+    
   manUtd: 
     country: England
     league: Barclays Premier league
@@ -57,3 +58,23 @@ data:
     is_sunday: off # False
     is_nigerian: No # False
     is_female: false # False
+
+
+# Another object (dict)
+expected_data:
+  Survived: 
+    0: 0
+    1: 1
+    2: 1
+  Pclass:
+    0: 3
+    1: 1
+    2: 3
+  Sex: 
+    0: male 
+    1: female 
+    2: female
+  Age: 
+    0: 22.0 
+    1: 38.0 
+    2: 26.0

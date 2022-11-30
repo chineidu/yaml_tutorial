@@ -24,7 +24,7 @@ my_list:
 # Anchors. We can initialize and reuse anchors
 website: &my_site site  # Anchor containing a single value "site"
 app_settings:
-  Twitter: &my_cred  # Anchor containing a dict
+  Twitter: &my_cred  # Anchor containing a dict (key-value pairs)
     - password: hell0123
     - username: yourName
 
