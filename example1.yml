@@ -1,0 +1,59 @@
+# List
+players:
+  - Messi
+  - Ronaldo
+  - Hazard
+  - Kelvin de Bruyne
+
+# Dict
+teams: 
+  chelsea: 
+    country: England
+    league: Barclays Premier league
+    founded: 1905
+    titles: [Champions League, Premier League, Club World Cup, Europa League, FA Cup, League Cup]  # List
+  manUtd: 
+    country: England
+    league: Barclays Premier league
+    founded: 1878
+    titles: # List
+      - Champions League
+      - Premier League
+      - Club World Cup
+      - Europa League
+      - FA Cup
+      - League Cup
+
+input:
+  is_available: True # True
+  is_data_scientist: yes # True
+  is_sunday: off # False
+  is_nigerian: No # False
+  not_a_numnber: .NAN # nan
+  infinity: .inf # inf
+  negative_infinity: -.inf # -inf
+  
+  multi_line_str: |-
+    This is a multi line string.
+    This is the second line.
+    Finally, this is the third line.
+
+  single_line_string: >-
+    This is a single line string. It's the 1st line.
+    This should also be on the 1st line.
+    This is equally on the supposed to be on the 1st line. 
+
+# Data Types
+data:
+  num: 12
+  float: 6.9
+  octal: 012
+  hexadecimal: 0x123
+  string: hello
+  another_string: "hello"
+  bool: 
+    is_available: True # True
+    is_data_scientist: yes # True
+    is_sunday: off # False
+    is_nigerian: No # False
+    is_female: false # False

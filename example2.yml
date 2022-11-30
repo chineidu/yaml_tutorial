@@ -1,0 +1,37 @@
+# A yaml file can have multiple documents
+# It's usually separated by ---
+my_certifications:
+  machine_learning: MLOps and Model Deployment
+  data_science: Feature Engineering And Model Building
+  ML: Building RESTful APIs with FastAPI
+
+---
+my_certifications:
+  - machine_learning: Practical MLOps
+  - data_science: Feature Selection And Model Building
+  - ML: Building RESTful APIs with Flask
+
+
+my_list: 
+  first_item:
+    some_key: some_value
+  second_item:  # None
+  third_item: ~  # None
+  fourth_item: null  # None
+
+
+---
+# Anchors. We can initialize and reuse anchors
+website: &my_site site  # Anchor containing a single value "site"
+app_settings:
+  Twitter: &my_cred  # Anchor containing a dict
+    - password: hell0123
+    - username: yourName
+
+  Instagram: *my_cred  # Reuse the anchor
+
+  YouTube: 
+    <<: *my_cred # Extend the credentials
+    full_name: Neidu Tha Baddest # Add full_name to the existing credentials
+
+another_website: *my_site # Reuse the anchor
